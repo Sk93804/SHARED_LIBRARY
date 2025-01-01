@@ -1,3 +1,3 @@
-def (String name ){
+def call(String name ){
     mvn '$name'
 }
