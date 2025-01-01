@@ -1,3 +1,3 @@
 def call(String name ){
-    mvn '$name'
+    sh 'mvn clean package'
 }
