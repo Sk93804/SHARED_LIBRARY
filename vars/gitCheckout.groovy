@@ -1,3 +1,3 @@
-def call(String GIT_BRANCH, SC_URL ){
-     git branch: '${GIT_BRANCH}' ,url: '${SC_URL}'
+def call(){
+     git branch: 'main', url: 'https://github.com/Sk93804/Maven-tomcat.git'
 }
