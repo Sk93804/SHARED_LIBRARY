@@ -1,3 +1,3 @@
-def call(String goal, String option) {
-   sh 'mvn ${goal} ${option} ${env.JOB_NAME}'
+def call() {
+   sh 'mvn clean package'
 }
