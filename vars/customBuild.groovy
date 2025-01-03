@@ -1,3 +1,3 @@
-def call() {
-   sh 'mvn clean package'
+def call(Map command) {
+   sh "mvn ${command.goal} ${command.option}"
 }
