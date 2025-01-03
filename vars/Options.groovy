@@ -1,3 +1,3 @@
-def call(Map buildNumToKeep){
- buildDiscarder(logRotator(numToKeepStr: "${buildNumToKeep}")) 
+def call(Map config){
+ buildDiscarder(logRotator(numToKeepStr: "${config.buildNumToKeep}")) 
 }
