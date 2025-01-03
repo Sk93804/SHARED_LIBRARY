@@ -1,3 +1,4 @@
-def call(){
-     git branch: 'main', url: 'https://github.com/Sk93804/Maven-tomcat.git'
+def call(Map config){
+     echo "Code checkout in ${config.env}"
+     git branch: '${config.branch}', url: '${config.url}'
 }
