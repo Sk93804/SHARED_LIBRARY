@@ -1,4 +1,5 @@
 def call(Map config){
-     echo "Code checkout in ${config.env}"
-     git branch: "${config.branch}", url: "${config.url}"
-     }
+     checkout scmGit(branches: [[name: "*/${config.branch}"]], 
+     extensions: [], 
+     userRemoteConfigs: [[url: config.url]])
+}
