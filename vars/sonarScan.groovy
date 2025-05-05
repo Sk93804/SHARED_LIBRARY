@@ -1,4 +1,4 @@
-def call(){
+def call(Map config){
     withSonarQubeEnv(config.SONARQUBE_ENV){
         sh """ 
          mvn sonar:sonar \
